@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MapPoints_Vesion2</string>
+    <string name="google_maps_API_key">AIzaSyBwhf422sRJ_ZLaQz-4p3vSmJApp5NIsvY</string>
+    <string name="google_maps">Открыть Google Maps</string>
+    <string name="waze">Открыть Waze</string>
+    <string name="from">Откуда</string>
+    <string name="text_hint">адресс, страна, улица и т.д.</string>
+    <string name="to">Куда</string>
+    <string name="count_path">Рассчитать маршрут</string>
+</resources>
