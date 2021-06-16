@@ -11,16 +11,14 @@ interface Api {
       @GET("geocode/json")
       fun getStreetByLatLng(@Query("latlng") latlng : String,
                             @Query("sensor") sensor : Boolean = false,
-                            @Query("language") language : String = "ru",
-                            @Query("key") key : String = "AIzaSyAYoN4LJJXYmebjCrcHmkqjcYuCZw-gl74"
+                            @Query("language") language : String = "ru"
       ): Deferred<NetworkStreet>
 
 
       @GET("geocode/json")
       fun getSteetByName(@Query("address") address : String,
                          @Query("sensor") sensor : Boolean = false,
-                         @Query("language") language : String = "ru",
-                         @Query("key") key : String = "AIzaSyAYoN4LJJXYmebjCrcHmkqjcYuCZw-gl74"
+                         @Query("language") language : String = "ru"
       ) : Deferred<NetworkStreet>
 
       @GET("directions/json")
@@ -28,8 +26,7 @@ interface Api {
           @Query("origin") origin : String,
           @Query("destination") destination : String,
           @Query("sensor") sensor : Boolean = false,
-          @Query("language") language : String = "ru",
-          @Query("key") key : String = "AIzaSyAYoN4LJJXYmebjCrcHmkqjcYuCZw-gl74"
+          @Query("language") language : String = "ru"
       ) : Deferred<RouteResponse>
 
 }
